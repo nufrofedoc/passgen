@@ -8,4 +8,19 @@ if (php_sapi_name() !== 'cli') {
 
 require __DIR__ . '/vendor/autoload.php';
 
+use Src\Passgen;
+
+$passgen = new Passgen();
+
+$passgen->registerCommand('generate', function(array $argv) use ($passgen) {
+    $length = $argv[2] ?? 12;
+    $passgen->generate($length);
+});
+
+$passgen->registerCommand('help', function(array $argv) use ($passgen) {
+    $passgen->getPrinter()->display("usage: ./passgen --length [32]");
+});
+
+$passgen->runCommand($argv);
+
     

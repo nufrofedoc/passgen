@@ -9,5 +9,11 @@
         }
     ],
     "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "lib/",
+            "Src\\": "src/"
+        }
+    },
     "require": {}
 }
