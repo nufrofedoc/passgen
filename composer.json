@@ -1,0 +1,13 @@
+{
+    "name": "nebado/passgen-php",
+    "description": "A simple cli password generator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nebado",
+            "email": "ruslan.nbd@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
