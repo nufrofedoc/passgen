@@ -12,6 +12,6 @@ Simple CLI PHP application for generating random password.
 
 $ composer dump-autoload
 $ ./passgen help
-$ ./passgen --length 32
+$ ./passgen generate 32
 
 ```
